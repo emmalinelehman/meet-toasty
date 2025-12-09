@@ -880,7 +880,8 @@ p {
     .peapod-story-container,
     .team-grid,
     .insights-grid,
-    .features-grid {
+    .features-grid,
+    .appendix-list {
         grid-template-columns: 1fr !important;
     }
 

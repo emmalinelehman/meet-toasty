@@ -81,9 +81,16 @@ h1 {
     line-height: 1.1;
     margin-bottom: var(--spacing-sm);
     background: linear-gradient(to right, #ff9e2c, #ff5f1f, #d92b2b);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: fire-text 3s infinite alternate;
+}
+
+.small-text {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: var(--spacing-sm);
 }
 
 h2 {
@@ -739,4 +746,150 @@ p {
     color: #ccc;
     padding: 10px 0;
     height: 150px;
+}
+
+
+
+/* Appendix / Milestone Documentation List */
+.appendix-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.appendix-list li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-md);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    border-radius: 12px;
+    color: var(--text-color);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid var(--surface-border);
+    font-weight: 500;
+}
+
+.appendix-list li a::after {
+    content: '→';
+    font-size: 1.2rem;
+    color: var(--accent-secondary);
+    transition: transform 0.3s ease;
+}
+
+.appendix-list li a:hover {
+    background: linear-gradient(135deg, rgba(255, 95, 31, 0.15), rgba(255, 95, 31, 0.05));
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.appendix-list li a:hover::after {
+    transform: translateX(5px);
+    color: var(--accent-primary);
+}
+
+/* Reflections Layout (Centered) */
+.reflections-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+    align-items: center;
+    /* Center the groups */
+}
+
+.reflection-group {
+    text-align: center;
+    /* Center text within groups */
+    max-width: 800px;
+    /* Constrain width for readability */
+}
+
+.reflection-group h3 {
+    color: var(--accent-secondary);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    display: inline-block;
+    border-bottom: 2px solid rgba(255, 95, 31, 0.3);
+    /* Add subtle underline instead of dot */
+    padding-bottom: 5px;
+}
+
+.styled-list {
+    list-style: none;
+    margin-top: var(--spacing-sm);
+    text-align: left;
+    /* Keep list items left-aligned for readability, but centered blocks */
+    display: inline-block;
+    /* Allow text-align center on parent to center this block */
+}
+
+.styled-list li {
+    margin-bottom: var(--spacing-sm);
+    padding-left: 1.5rem;
+    position: relative;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.styled-list li::before {
+    content: '🔥';
+    font-size: 0.8rem;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+/* Fix for Persona Image Size */
+.audience-visuals img {
+    max-width: 100%;
+    width: auto;
+    max-height: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Global Mobile Responsiveness Improvements */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        /* Scale down hero title */
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .section {
+        margin-bottom: var(--spacing-lg);
+        /* Reduce vertical gaps between sections */
+    }
+
+    .card,
+    .team-member-card {
+        padding: var(--spacing-sm);
+        /* Reduce card padding on mobile */
+    }
+
+    /* Ensure grids stack fully on small screens */
+    .two-column,
+    .hero,
+    .peapod-story-container,
+    .team-grid,
+    .insights-grid,
+    .features-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .timeline::before {
+        left: 10px;
+        /* Adjust timeline alignment */
+    }
+
+    .page {
+        padding: 0 var(--spacing-sm);
+    }
 }

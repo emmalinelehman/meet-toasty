@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Toasty — The Adaptive Smart Home Companion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <canvas id="ember-canvas"></canvas>
+    <div class="page">
+
+        <!-- NAVIGATION -->
+        <nav class="site-nav">
+            <div class="nav-inner">
+                <div class="nav-brand">
+                    <span class="nav-logo">T</span>
+                    <span class="nav-title">Toasty</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#motivation">Motivation</a></li>
+                    <li><a href="#audience">Audience</a></li>
+                    <li><a href="#insights">Insights</a></li>
+                    <li><a href="#studies">Studies</a></li>
+                    <li><a href="#concept">Concept</a></li>
+
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- HEADER / HERO -->
+        <header class="hero" id="top">
+            <div class="hero-content">
+                <p class="hero-kicker">Case Study · Toasty</p>
+                <h1>The Adaptive Smart Home Companion</h1>
+                <h2 class="hero-subtitle">A supportive IoT companion that helps adults overcome executive dysfunction at
+                    home.</h2>
+                <div class="hero-intro-box">
+                    <p class="hero-intro">
+                        Toasty is an emotionally intelligent smart home companion designed to help adults with executive
+                        dysfunction
+                        start and complete daily tasks. By adapting its tone, pacing, and guidance to a user’s emotional
+                        state and
+                        energy levels, Toasty reduces overwhelm and brings clarity to moments when the “first step”
+                        feels impossible.
+                    </p>
+                    <p class="hero-value">
+                        <strong>Value Proposition:</strong> Toasty turns overwhelming tasks into approachable moments
+                        through adaptive emotional support and smart home integration.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero-media">
+                <figure>
+                    <img src="images/Toasty Illustrated.png"
+                        alt="Toasty character illustration - a friendly animated fire" />
+                </figure>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <!-- MOTIVATION -->
+            <section id="motivation" class="section">
+                <header class="section-header">
+                    <h2>Motivation</h2>
+                    <p class="section-subtitle">Why this problem matters</p>
+                </header>
+                <div class="content-wrapper">
+                    <div class="text-block">
+                        <p>
+                            Adults with executive dysfunction often struggle most with getting started, not with the
+                            tasks themselves.
+                            Our formative work revealed that fatigue, unclear starting points, decision overload, and
+                            emotional overwhelm
+                            are the most persistent barriers. Everyday tasks like cooking, dishes, and laundry become
+                            disproportionately
+                            difficult because users lack energy, structure, and social presence.
+                        </p>
+                    </div>
+
+                    <div class="motivation-layout">
+                        <div class="motivation-text">
+                            <p>
+                                Across our research, participants repeatedly described a gap between intention and
+                                action.
+                                They could see the mess in the kitchen, or the pile of laundry—but lacked the energy or
+                                clarity
+                                to begin. When energy was low, even small tasks felt cognitively heavy.
+                            </p>
+                            <p>
+                                Traditional productivity tools assume consistent focus and stable energy.
+                                Our participants’ realities were different: time blindness, fluctuating capacity, and
+                                emotional drag
+                                made “just use a to-do list” unrealistic. They needed tools that could sit with them in
+                                these moments,
+                                not judge them for struggling.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TARGET AUDIENCE -->
+            <section id="audience" class="section">
+                <header class="section-header">
+                    <h2>Target Audience</h2>
+                    <p class="section-subtitle">
+                        Capable and motivated, but struggling with initiation.
+                    </p>
+                </header>
+
+                <div class="two-column">
+                    <div class="column card">
+                        <h3>Who we designed for</h3>
+                        <p>
+                            Our audience is adults who experience executive dysfunction—people who are capable and
+                            motivated, but who
+                            routinely struggle with task initiation, planning, and energy regulation. These challenges
+                            appeared across
+                            our survey participants regardless of diagnosis.
+                        </p>
+                    </div>
+
+                    <div class="column card">
+                        <h3>Meet Gina (Persona)</h3>
+                        <p>
+                            <strong>Gina</strong> is a 28-year-old PhD student. When she gets home, exhaustion sets in.
+                            She sees the dishes,
+                            the reminders—and still can’t start. Her thoughts spiral, tasks stack, and decision-making
+                            becomes overwhelming.
+                            She’s most successful when she feels a gentle sense of social presence.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Audience Visuals -->
+                <div class="audience-visuals">
+                    <figure class="full-width-figure">
+                        <img src="images/SI 612 Mini Personas (1).png"
+                            alt="User Personas highlighting needs and pain points">
+                        <figcaption>Our primary personas representing the spectrum of executive dysfunction needs.
+                        </figcaption>
+                    </figure>
+
+                    <div class="two-column">
+                        <figure>
+                            <img src="images/Empathy Map_1.png"
+                                alt="Empathy Map showing what our users say, think, do, and feel">
+                            <figcaption>Empathy Map</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/Journey Map_1.png"
+                                alt="Journey Map tracking the emotional highs and lows of daily tasks">
+                            <figcaption>User Journey Map</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- KEY INSIGHTS -->
+            <section id="insights" class="section">
+                <header class="section-header">
+                    <h2>Key Insights</h2>
+                </header>
+
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <h3>Initiation is the barrier</h3>
+                        <p>Users freeze when the first step isn’t clear.</p>
+                    </div>
+                    <div class="insight-card">
+                        <h3>Energy varies</h3>
+                        <p>92% cited energy depletion as the biggest obstacle.</p>
+                    </div>
+                    <div class="insight-card">
+                        <h3>Social presence helps</h3>
+                        <p>Gentle acknowledgment increased follow-through.</p>
+                    </div>
+                    <div class="insight-card">
+                        <h3>Tone matters</h3>
+                        <p>Supportive tone felt motivating; pushy tone felt intrusive.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FORMATIVE STUDIES -->
+            <section id="studies" class="section">
+                <header class="section-header">
+                    <h2>Formative Studies</h2>
+                    <p class="section-subtitle">A five-step research process to uncover the real needs.</p>
+                </header>
+
+                <div class="timeline">
+                    <article class="study-item">
+                        <div class="study-marker">1</div>
+                        <div class="study-content">
+                            <h3>Contextual Inquiry</h3>
+                            <p>Social presence matters. Even light social presence increased follow-through.</p>
+                        </div>
+                    </article>
+                    <article class="study-item">
+                        <div class="study-marker">2</div>
+                        <div class="study-content">
+                            <h3>Diary Study</h3>
+                            <p>Initiation is harder than completion. Started tasks were easier to finish.</p>
+                        </div>
+                    </article>
+                    <article class="study-item">
+                        <div class="study-marker">3</div>
+                        <div class="study-content">
+                            <h3>User Interviews</h3>
+                            <p>Fatigue is the quiet saboteur. It's not about lack of motivation.</p>
+                        </div>
+                    </article>
+                    <article class="study-item">
+                        <div class="study-marker">4</div>
+                        <div class="study-content">
+                            <h3>Survey (n=52)</h3>
+                            <p>Cooking (92.3%) and cleaning (74.4%) are the top struggle areas.</p>
+                        </div>
+                    </article>
+                    <article class="study-item">
+                        <div class="study-marker">5</div>
+                        <div class="study-content">
+                            <h3>User Enactments</h3>
+                            <p>Tone makes or breaks the experience. Adaptive personality is key.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="studies-gallery">
+                    <header class="gallery-header">
+                        <h3>Process Gallery</h3>
+                    </header>
+                    <div class="gallery-grid">
+                        <img src="images/02A0198F-6646-4762-80BF-D38806672E69_4_5005_c.jpeg" alt="Process photo 1">
+                        <img src="images/0F3774D3-F44B-4AD0-BC9F-FC24C83B1C6C_1_105_c.jpeg" alt="Process photo 2">
+                        <img src="images/10BEB439-9A2E-407E-AAE3-784E28B38D74_1_105_c.jpeg" alt="Process photo 3">
+                        <img src="images/62E08947-BE7D-4F6E-83BE-D498805E9AB2_1_105_c.jpeg" alt="Process photo 4">
+                        <img src="images/C14BAEB4-45E3-4654-BAE6-77B49057336C_4_5005_c.jpeg" alt="Process photo 5">
+                    </div>
+                </div>
+            </section>
+
+            <!-- FINAL SYSTEM CONCEPT -->
+            <section id="concept" class="section highlight-section">
+                <header class="section-header">
+                    <h2>Meet Toasty</h2>
+                    <p class="section-subtitle">Your Adaptive Home Companion</p>
+                </header>
+
+                <article class="concept-content">
+                    <p class="concept-intro">
+                        Toasty combines emotional intelligence, adaptive prompting, and smart home integration to
+                        support adults with
+                        executive dysfunction across the hardest moments of the day.
+                    </p>
+
+                    <div class="video-container">
+                        <iframe src="https://drive.google.com/file/d/1kbzV01UM5D9OSSTIUFc9aL7eFv702dxs/preview"
+                            width="640" height="480" allow="autoplay" style="border:none;"></iframe>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h3>Adaptive Persona</h3>
+                            <p>Adjusts voice, tone, and pacing to match your energy.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Expressive Fireplace Hub</h3>
+                            <p>Provides warm ambience, clear starting points, and comforting feedback.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Dockable Wearable</h3>
+                            <p>Lightweight portable support that travels with you.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Smart Home Integration</h3>
+                            <p>Timers, lights, and environmental cues bridge the gap.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="concept-images">
+                    <figure class="concept-sketches">
+                        <img src="images/Toasty Sketch.png" alt="Early sketches of Toasty's design" />
+                        <figcaption>Early sketches of the Toasty character.</figcaption>
+                    </figure>
+                    <figure class="concept-sketches">
+                        <img src="images/Prototype Sketches.jpeg" alt="Prototype sketches and ideation" />
+                        <figcaption>Ideation and prototyping process.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- TEAM -->
+            <section id="team" class="section team-section">
+                <div class="team-header-centered">
+                    <span class="creator-pill">THE CREATORS</span>
+                    <h2>Meet Team Peapod</h2>
+                    <p class="team-subtitle">
+                        We are PEEA Pod. Four students passionate about using technology to make daily life more
+                        accessible.
+                    </p>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-member-card">
+                        <div class="avatar-circle">P</div>
+                        <h3>Patrick</h3>
+                        <p class="member-role">Project Manager</p>
+                        <p class="member-desc">
+                            Kept the team blazing forward. Coordinated team efforts, kept deliverables on track, and
+                            supported the team through each phase of development.
+                        </p>
+                    </div>
+
+                    <div class="team-member-card">
+                        <div class="avatar-circle">E</div>
+                        <h3>Emmaline</h3>
+                        <p class="member-role">Front-End Engineer</p>
+                        <p class="member-desc">
+                            The fuel for presentations. Built the Toasty website and underlying presentation framework,
+                            managed digital assets, and performed in live demonstrations to showcase Toasty’s behavior
+                            in context.
+                        </p>
+                    </div>
+
+                    <div class="team-member-card">
+                        <div class="avatar-circle">E</div>
+                        <h3>Erin</h3>
+                        <p class="member-role">Creative Prototyper & Animation Designer</p>
+                        <p class="member-desc">
+                            Made a hearth a home. Designed Toasty’s expressive animations and 3D-printed components to
+                            bring Toasty’s form and personality to life.
+                        </p>
+                    </div>
+
+                    <div class="team-member-card">
+                        <div class="avatar-circle">A</div>
+                        <h3>Ashita</h3>
+                        <p class="member-role">Technical Architect</p>
+                        <p class="member-desc">
+                            The logic behind the spark. Bridged product goals with feasible system behavior, shaping
+                            Toasty’s wearable–hub relationship and the system’s technical direction.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="peapod-story-container">
+                    <div class="peapod-image-card">
+                        <img src="images/team_illustration.png" alt="Illustration of Team Peapod">
+                    </div>
+                    <div class="peapod-text-card">
+                        <h3>Why "Peapod"?</h3>
+                        <p>
+                            Our team name comes from our initials: Patrick, Emmaline, Erin, and Ashita.
+                            It's P-E-E-A... like Peas in a Pod! We stick together to solve tough
+                            problems.
+                        </p>
+                        <div class="pea-dots">
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <p>Toasty — The Adaptive Smart Home Companion · SI 612 Interaction Design</p>
+        </footer>
+
+    </div>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
